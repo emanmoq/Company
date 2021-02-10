@@ -38,18 +38,17 @@ overflow-x: hidden;
 }
 .hero{
     background-image:url("../images/heroBg.png") ;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     padding-bottom:300px;
+    padding-top:30px;
 }
 .navbar-brand.logo{
  float:none;
  width:150px;
  margin-left:90px
 }
-.scrollNav .navbar-brand{
-    color:#1752F0
-}
+
 .navbar-expand-lg .navbar-nav .nav-item{
     padding:10px 15px;
 }
@@ -61,16 +60,8 @@ overflow-x: hidden;
     position: relative;
 
 }
-.scrollNav .navbar-expand-lg .navbar-nav .nav-link{
-color:#1752F0;
-opacity: .75;;
-}
 
-.scrollNav .navbar-expand-lg .navbar-nav .nav-item.active .nav-link{
-    color:#1752F0;
-    opacity: 1;
-    
-}
+
 .navbar-expand-lg .navbar-nav  .nav-item.active .nav-link{
     font-family:"DUBAI-MEDIUM";
     color:white;
@@ -92,8 +83,12 @@ transition :all .5s;
 
 }
 .navbar {
-    float:right;
+    padding:0;
     width:80%;
+    float: right;
+}
+.navbar-expand-lg .navbar-nav{
+    margin-top:10px;
 }
 .requestBtn{
 width:170px;
@@ -147,7 +142,7 @@ transition: all .5s;
 }
 .heroSection .subscribeBox{
     position: absolute;
-    z-index:99999999999;
+    z-index:2;
     right: 0;
     width: 120%;
     top: 77%;
@@ -279,14 +274,41 @@ margin-bottom:25px;
  }
  .subscribe {
     position: relative;
-    top: 50%;
+    top: 25%;
  }
 .subscribe .container{
 background-color: #2749A2;
 padding:130px 70px;
 border-radius: 150px 150px 150px 0;
 }
+i.fa-phone-volume{
+    background-color: white;
+    border-radius: 50%;
+    width:32px;
+    height:32px;
+    text-align: center;
+    line-height: 30px;
+}
 
+.contactBtn{
+    background-color: #00B5FF;
+    border-radius: 8px;
+    width:170px;
+    height:50px;
+    text-align: center;
+    color:white;
+    border:1px solid #00B5FF;
+    transition: all .5s;
+    margin-top:10px;
+}
+.contactBtn:hover{
+    background-color: white;
+    color:#00B5FF;
+}
+.contactBtn i{
+    color:#00B5FF;
+    margin-left: 11px;;
+}
 .subscribe p{
    font-size:  2em;
    color:white;
@@ -401,7 +423,7 @@ font-size:20px;
     top: 0 !important;
     z-index: 555;
     animation-duration: .5s;
-    background: white;
+    background: #272B4B;
     position: fixed !important;
     box-shadow: rgba(0, 0, 0, 0.1) 2px 3px 20px 3px;
     transition: 1s all;
@@ -415,67 +437,88 @@ font-size:20px;
 .btn{
     line-height: 37px;
 }
+footer i{
+    width:30px;
+    height:30px;
+}
+footer .fas.fa-phone-volume{
+color:#272B4B
+}
 @media(min-width:300px) and (max-width:767px){
     body{
         font-size:12px
     }
-    .heroImg{
-        position: relative;
-        width:100%;
-        padding: auto 5%;
-        height: auto;
-    }
+    .owl-carousel .owl-stage-outer{
+    overflow: hidden;
+}
     .heroImg img{
         width:100%;
         height: auto;
     }
     .hero{
         padding:20px 0;
+        background-image:none;
+        background-image: linear-gradient(45deg ,#426CD9,#284BA6);
     }
-    .adv{
-        padding:20px 0;
+    .heroImg{
+        margin-top:0;
+    
     }
-    .discount{
-        width:auto;
+    .contactBtn{
+        width:100%;
+    float: none;
     }
-    .discountCircle{
-        margin:auto;
-        margin-bottom: 20px;;
+    .heroSection .subscribeBox{
+        width:100%;
+        position: relative;
+        top:auto;
+        right:auto;
+        margin-top:20px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link:before{
+        display:none;
     }
     .subscribeBtn{
-        position: relative;
-        width: 100%;;
+        height: 70px;
+        width: 113px;
     }
-    .nav-pills .nav-item{
-        width:auto;
-
-    }
-    .nav-pills{
-        justify-content: center;
-        margin-top:30px;
-        margin-bottom: 30px;;
-    }
-    .nav-pills .nav-link{
-padding:5px 10px;
-    }
-    .owl-nav{
-        text-align: center;
-        bottom:-8%;
-    }
-    .owl-carousel .owl-nav button.owl-next{
-right:5%;
-    }
-     .owl-carousel .owl-nav button.owl-prev{
-      left:5%;
-    }
-    .contactForm .form-group.halfFormGroup{
-        width:100%;
-    }
-    .marginForm{
-        margin:0;
-    }
+.services{
+    padding:50px 0;
+}
+.sectionTitle{
+    margin-bottom:50px;
+}
+.aboutUs .container{
+    padding:50px 20px;
+    border-radius: 0;;
+}
+.servicesBox{
+    height:auto;
+    padding:30px;
+}
+.marginAbout{
+    margin-top: 20px;;
+}
+.clients{
+    padding:50px 0;
+}
+.subscribe{
+    top:auto;
+}
+.subscribe .container{
+    border-radius: 0;
+    padding:30px 20px;;
+}
+   footer{
+       padding:20px 0;
+   }
     .socialIcons{
-        text-align: center;
+        text-align: right;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+    footer .logo{
+        float: none;
     }
     .socialIcons li{
         float: none;
@@ -497,9 +540,7 @@ right:5%;
         border:1px solid white;
         text-align: center;
     }
-    .scrollNav button.navbar-toggler{
-        border-color:#1752F0
-    }
+ 
     .mobileMenu i{
         background-color: white;
         border-radius: 2px;
@@ -512,9 +553,7 @@ right:5%;
     .mobileMenu i:last-child{
     margin-bottom: 0;;
     }
-    .scrollNav .mobileMenu i{
-        background-color:#1752F0
-    }
+
     .navbar{
         width:100%;
         margin-bottom:20px;
@@ -535,41 +574,53 @@ right:5%;
     body{
         font-size:14px
     }
-    .heroImg{
-        position: relative;
-        width:100%;
-        padding: auto 5%;
-        height: auto;
+    .owl-carousel .owl-stage-outer{
+        overflow: hidden;
+        padding:20px 5;
     }
-    .heroImg img{
-        width:100%;
-        height: auto;
+    .clientBox{
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     }
+    .aboutUs .container{
+padding:50px 20px;
+border-radius: 0;;
+    }
+   .marginAbout{
+       margin-top:0;
+   }
+   .clients{
+       padding:50px 0;
+   }
+   .sectionTitle{
+       margin-bottom:20px;
+   }
+   .services{
+    padding:50px 0;
+}
+.sectionTitle{
+    margin-bottom:50px;
+}
+.aboutUs .container{
+    padding:50px 20px;
+    border-radius: 0;;
+}
+footer{
+    padding:20px 0;
+}
+.subscribe{
+    top:auto;
+    margin-bottom:20px;
+}
+.sectionTitle{
+    margin-bottom:50px;
+}
+.aboutUs .container{
+    padding:50px 20px;
+    border-radius: 0;;
+}
     .hero{
         padding:20px 0;
     }
-    .adv{
-        padding:20px 0;
-    }
-    .discount{
-        width:auto;
-    }
-    .discountCircle{
-        margin:auto;
-        margin-bottom: 20px;;
-    }
-
-    .owl-nav{
-        text-align: center;
-        bottom:-8%;
-    }
-    .owl-carousel .owl-nav button.owl-next{
-right:5%;
-    }
-     .owl-carousel .owl-nav button.owl-prev{
-      left:5%;
-    }
-  
   
     .socialIcons{
         text-align: center;
@@ -581,35 +632,34 @@ right:5%;
       margin-top:0;
   }
     .heroText{
-        margin-top: 90px;
+        margin-top: 20px;
     }
- .navbar-expand-lg .navbar-collapse{
-display: flex;
-flex-basis: auto;
- }
-.navbar-toggler{
 
-    display: none;
- }    .contactUs{
-        padding:20px 0;
-    }
-    .nav-pills .nav-link{
-        padding:5px 10px;
-    }
     .subscribeBtn{
         width:140px;
     }
-    .navbar-nav {
-        display: -ms-flexbox;
-        display: flex;}
-        .navbar-expand-lg .navbar-nav {
-            -ms-flex-direction: row;
-            flex-direction: row;
-        }
-    .requestBtn{
-        width:130px;
-    }
+
     .marginForm{
         margin-left:24px;
     }
+    .navbar-expand-lg .navbar-collapse{
+        display: flex;
+        flex-basis: auto;
+         }
+        .navbar-toggler{
+        
+            display: none;
+         } 
+    .navbar{
+        width:70%;
+        margin-top:20px;
+    }
+         .navbar-nav {
+            display: -ms-flexbox;
+            display: flex;}
+            .navbar-expand-lg .navbar-nav {
+                -ms-flex-direction: row;
+                flex-direction: row;
+            }
+    
 }
