@@ -1,0 +1,615 @@
+@font-face{
+    font-family:"JFFlatRegular";
+    src:url("../fonts/JFFlatRegular.ttf");
+}
+
+img{
+    width:100%;
+}
+a{
+ text-decoration: none;   
+}
+a:hover{
+    color:black
+}
+
+
+p{
+    font-size:1.3333333333333333em;;
+
+}
+ul{
+    padding:0;
+    margin:0;
+}
+ul li{
+    list-style-type: none;
+    margin-bottom:19px;
+}
+body{
+     font-size: 16px;
+    background-color: #fff;
+    position: relative;
+    direction: rtl;
+    text-align: right;
+    font-family:"JFFlatRegular";
+    color:black;
+overflow-x: hidden;
+}
+.hero{
+    background-image:url("../images/heroBg.png") ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom:300px;
+}
+.navbar-brand.logo{
+ float:none;
+ width:150px;
+ margin-left:90px
+}
+.scrollNav .navbar-brand{
+    color:#1752F0
+}
+.navbar-expand-lg .navbar-nav .nav-item{
+    padding:10px 15px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    font-size:1.4444444444444444em;
+    font-family:"DUBAI-REGULAR";
+    padding:0;
+    color:rgba(255,255,255,.75);
+    position: relative;
+
+}
+.scrollNav .navbar-expand-lg .navbar-nav .nav-link{
+color:#1752F0;
+opacity: .75;;
+}
+
+.scrollNav .navbar-expand-lg .navbar-nav .nav-item.active .nav-link{
+    color:#1752F0;
+    opacity: 1;
+    
+}
+.navbar-expand-lg .navbar-nav  .nav-item.active .nav-link{
+    font-family:"DUBAI-MEDIUM";
+    color:white;
+
+}
+.navbar-expand-lg .navbar-nav  .nav-item .nav-link:before{
+position: absolute;
+width:0;
+content:"";
+height: 2px;
+background-color: white;
+bottom: 0;
+right:0;
+transition :all .5s;
+}
+.navbar-expand-lg .navbar-nav  .nav-item.active .nav-link:before{
+width:100%;
+transition :all .5s;
+
+}
+.navbar {
+    float:right;
+    width:80%;
+}
+.requestBtn{
+width:170px;
+height:50;
+border-radius: 12px;
+color:#1752F0;
+background-color: white;;
+font-size:1.3333333333333333em;;
+font-family:"DUBAI-MEDIUM";
+border:1px solid #fff;
+transition: all .5s;
+
+
+}
+.scrollNav .requestBtn {
+    background-color: #1752F0;
+    color:white;
+transition: all .5s;
+}
+.scrollNav .requestBtn:hover{
+    color:#1752F0;
+background-color: white;;
+font-family:"DUBAI-MEDIUM";
+border:1px solid #1752F0;
+
+}
+.requestBtn:hover{
+    background-color: transparent;
+    color:white;
+transition: all .5s;
+}
+.heroSection{
+    position: relative;
+}
+.heroText{
+    margin-top:200px;
+}
+.heroImg{
+  border-radius: 0 275px 275px 275px;;
+    overflow: hidden; 
+    margin-top:120px;
+
+}
+
+.heroText h5{
+    font-size:3em;
+    color:white;
+}
+.heroSection{
+    position: relative;
+}
+.heroSection .subscribeBox{
+    position: absolute;
+    z-index:99999999999;
+    right: 0;
+    width: 120%;
+    top: 77%;
+}
+
+.heroText span{
+font-size: 1.3333333333333333em;
+color:white;
+margin-top:22px;
+}
+.services{
+    padding-top:164px;
+    padding-bottom:250px;
+}
+.sectionTitle{
+    margin-bottom:130px;
+    text-align: center;
+}
+.sectionTitle h4{
+    color:#000000;
+margin-bottom:47px;
+font-size:2em;
+}
+
+.sectionTitle p{
+   font-size:1.3333333333333333em;
+    opacity: .5;
+    color:#676769;
+}
+.servicesBox{
+    border-radius: 4px;
+    padding:64px 40px;
+    text-align: center;
+    height: 400px;;
+}
+.serviceIcon{
+    max-width: 83px;
+    margin:auto;
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+.servicesBox:hover{
+    box-shadow:0 30px 50px rgba(0, 0, 0, 0.1) ;
+}
+.servicesBox h4{
+    font-size:1.4444444444444444em;
+    margin-bottom: 24px;
+}
+.servicesBox p{
+    font-size:1em;
+  color:#676769;
+}
+.aboutUs .container{
+background-color: #F4F5FA;
+padding:170px 120px ;
+border-radius:  275px 275px 0 275px;
+
+}
+.aboutImg{
+    border-radius: 8px;
+    overflow:hidden;
+}
+.aboutText {
+    margin-top:120px;
+
+}
+.aboutText h5{
+    font-size:1.5555555555555556em;
+    color:black;
+}
+.aboutText p{
+    font-size:1.2222222222em;
+    color:#676769;
+margin-top:62px;
+}
+.marginAbout{
+    margin-top:140px;
+}
+.clients{
+    padding-top:150px;
+    padding-bottom:180px;
+}
+.clientBox{
+    padding:60px 20px;
+    border-radius: 4px;
+    box-shadow:0 30px 50px rgba(0, 0, 0, 0.1);
+}
+.clientBox h4{
+font-size:1.4444444444444444em;
+margin-top:30px;
+margin-bottom:25px;
+}
+.clientBox p{
+    font-size:1em;
+    color:#676769;
+    margin-bottom:50px;
+}
+.clientImg{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: right;
+}
+.clientName{
+    float:right;
+    margin-right:20px;
+    width:70%;
+}
+.clientName h4{
+    font-size:1em;
+    color:#041344;
+    margin-bottom: 7px;;
+}
+.clientName span{
+    font-size:0.8888888888888888em;
+    color:#004FCD;
+}
+.owl-carousel .owl-stage-outer{
+    overflow:visible
+}
+.owl-item {
+    opacity: 0;
+    transition: opacity .2s;
+ }
+.owl-item.active {
+   opacity: 1;
+ }
+ .subscribe {
+    position: relative;
+    top: 50%;
+ }
+.subscribe .container{
+background-color: #2749A2;
+padding:130px 70px;
+border-radius: 150px 150px 150px 0;
+}
+
+.subscribe p{
+   font-size:  2em;
+   color:white;
+}
+.subscribeForm{
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.subscribeBox .form-group{
+    width:100%;
+}
+.subscribeBox .form-control{
+    background-color: white;
+    border:2px solid white;
+    border-radius: 10PX;
+    height:90px;
+}
+.subscribeBtn {
+    background-color: #FFBD61;
+    color:white;
+    border:2px solid #FFBD61;
+    position: absolute;
+    border-radius: 10px;
+height: 70px;
+width: 200px;
+LEFT:10px;
+top:10px;
+transition: all .5s;
+}
+footer{
+    background-color: #272B4B;
+    padding-top:300px;
+    padding-bottom:90px;
+}
+.subscribeBtn:hover{
+    background-color: transparent;
+    color:#FFBD61;
+    transition:  all .5s;
+}
+
+.footerList li {
+    color:white;
+    font-size:1em;
+    margin-bottom:10px;
+}
+.footerList li i,.footerList li p{
+    display: inline-block;
+    margin-bottom: 0;
+}
+.footerList li i {
+    margin-left:5px;
+}
+footer .logo{
+    width:180px;
+    float: left;
+}
+.socialIcons{
+    text-align: center;
+}
+.socialIcons li{
+    display: inline-block;
+    width:42px;
+    height:42px;
+    border-radius: 50%;
+    background-color:white;
+    margin-right:15px;
+    text-align: center;
+    transition: all .5s;
+
+}
+.socialIcons li a{
+    color:#272B4B;
+line-height: 20px;
+font-size:20px;
+}
+.socialIcons li i{
+    line-height: 40px;;
+}
+.socialIcons li:hover{
+    background-color: rgba(0,0,0,.1);
+    transition: all .5s;
+}
+.facebook:hover a{
+    color:#3b5998 ;
+}
+.twitter:hover a {
+    color:#00acee;
+}
+.insta:hover a{ 
+    COLOR: #FD1D1D;
+}
+.copyRights {
+    margin-top:50px;
+    text-align: center;
+}
+.copyRights h3{
+    text-align: center;
+    font-size:.8888em;
+    color:#8291AB;
+}
+.modal.show .modal-dialog{
+    max-width: 70%;;
+}
+.close{
+    display: inline-block;
+    text-align: left;
+    margin: 20px;
+
+}
+.scrollNav {
+    top: 0 !important;
+    z-index: 555;
+    animation-duration: .5s;
+    background: white;
+    position: fixed !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 3px 20px 3px;
+    transition: 1s all;
+    left: 0;
+    width:100%;
+    right:0;
+    padding:10px 0;
+    transition: all .5s;;
+    animation:sticky;
+}
+.btn{
+    line-height: 37px;
+}
+@media(min-width:300px) and (max-width:767px){
+    body{
+        font-size:12px
+    }
+    .heroImg{
+        position: relative;
+        width:100%;
+        padding: auto 5%;
+        height: auto;
+    }
+    .heroImg img{
+        width:100%;
+        height: auto;
+    }
+    .hero{
+        padding:20px 0;
+    }
+    .adv{
+        padding:20px 0;
+    }
+    .discount{
+        width:auto;
+    }
+    .discountCircle{
+        margin:auto;
+        margin-bottom: 20px;;
+    }
+    .subscribeBtn{
+        position: relative;
+        width: 100%;;
+    }
+    .nav-pills .nav-item{
+        width:auto;
+
+    }
+    .nav-pills{
+        justify-content: center;
+        margin-top:30px;
+        margin-bottom: 30px;;
+    }
+    .nav-pills .nav-link{
+padding:5px 10px;
+    }
+    .owl-nav{
+        text-align: center;
+        bottom:-8%;
+    }
+    .owl-carousel .owl-nav button.owl-next{
+right:5%;
+    }
+     .owl-carousel .owl-nav button.owl-prev{
+      left:5%;
+    }
+    .contactForm .form-group.halfFormGroup{
+        width:100%;
+    }
+    .marginForm{
+        margin:0;
+    }
+    .socialIcons{
+        text-align: center;
+    }
+    .socialIcons li{
+        float: none;
+    }
+    .requestBtn{
+        width:100%;
+    }
+    .heroText{
+        margin-top: 90px;
+    }
+    button.navbar-toggler {
+        position: relative;
+        border: none;
+        height: 40px;
+        width:50px;
+        cursor: pointer;
+        border-radius: 0;
+        opacity: .7;
+        border:1px solid white;
+        text-align: center;
+    }
+    .scrollNav button.navbar-toggler{
+        border-color:#1752F0
+    }
+    .mobileMenu i{
+        background-color: white;
+        border-radius: 2px;
+        content: '';
+        display: block;
+        width: 95%;
+        height: 3px;
+        margin-bottom:5px
+    }
+    .mobileMenu i:last-child{
+    margin-bottom: 0;;
+    }
+    .scrollNav .mobileMenu i{
+        background-color:#1752F0
+    }
+    .navbar{
+        width:100%;
+        margin-bottom:20px;
+    }
+    .nav-link{
+        margin-bottom:10px;
+        margin-top:10px;
+    }
+    .contactUs{
+        padding:20px 0;
+    }
+    .marginBox{
+        margin-top:50px
+    }
+    
+}
+@media(min-width:768px) and (max-width:1023px){
+    body{
+        font-size:14px
+    }
+    .heroImg{
+        position: relative;
+        width:100%;
+        padding: auto 5%;
+        height: auto;
+    }
+    .heroImg img{
+        width:100%;
+        height: auto;
+    }
+    .hero{
+        padding:20px 0;
+    }
+    .adv{
+        padding:20px 0;
+    }
+    .discount{
+        width:auto;
+    }
+    .discountCircle{
+        margin:auto;
+        margin-bottom: 20px;;
+    }
+
+    .owl-nav{
+        text-align: center;
+        bottom:-8%;
+    }
+    .owl-carousel .owl-nav button.owl-next{
+right:5%;
+    }
+     .owl-carousel .owl-nav button.owl-prev{
+      left:5%;
+    }
+  
+  
+    .socialIcons{
+        text-align: center;
+    }
+    .socialIcons li{
+        float: none;
+    }
+  .marginBox{
+      margin-top:0;
+  }
+    .heroText{
+        margin-top: 90px;
+    }
+ .navbar-expand-lg .navbar-collapse{
+display: flex;
+flex-basis: auto;
+ }
+.navbar-toggler{
+
+    display: none;
+ }    .contactUs{
+        padding:20px 0;
+    }
+    .nav-pills .nav-link{
+        padding:5px 10px;
+    }
+    .subscribeBtn{
+        width:140px;
+    }
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;}
+        .navbar-expand-lg .navbar-nav {
+            -ms-flex-direction: row;
+            flex-direction: row;
+        }
+    .requestBtn{
+        width:130px;
+    }
+    .marginForm{
+        margin-left:24px;
+    }
+}
