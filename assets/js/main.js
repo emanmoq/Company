@@ -1,5 +1,5 @@
 jQuery(function ($) {
-
+//declare slider (owl-carousel slider)
   $('.clientCarusel').owlCarousel({
     autoplay: true,
     loop: false,
@@ -28,10 +28,10 @@ jQuery(function ($) {
   function onScroll(event){
 			
 		var scrollPosition = $(document).scrollTop();
+    //add class active when select item from navbar 
 		$('.navbar-collapse .nav-item a[href^="#"').each(function () {
 			console.log($(this).attr('href')); 
 		  var refElement = $($(this).attr("href"));
-		//   console.log($(this).attr("href")); //log
 		  if (refElement.length&&refElement.position().top <= scrollPosition) {
 			$('.navbar-collapse .nav-item ').removeClass("active");
 			$(this).parent().addClass("active");
@@ -43,7 +43,7 @@ jQuery(function ($) {
 		});
 	  }
     $(document).on("scroll", onScroll);
-
+// animate to the section when click  on it
     $('.navbar-collapse ul li a').on('click', function () {
       $('html, body').animate({ scrollTop: $(this.hash).offset().top  - 5 }, 1000);
       $('.navbar-collapse.collapse.in').removeClass('in');
@@ -52,9 +52,8 @@ jQuery(function ($) {
     
   $(window).scroll(function () {
     scrollTop = $(window).scrollTop();
-
+//add fix header when scroll down and remove when back up
     if (scrollTop > $('header').height()) {
-      $("#counter").css("padding-top", "150px");
       $('header').addClass('scrollNav');
 
 
@@ -65,9 +64,23 @@ jQuery(function ($) {
     }
 
   });
+  //close menu when choose item
   $(".navbar .nav-link").click(function(){
     $(".collapse").removeClass("show");
   })
-      
+  // declare rating 
+  $(".my-rating").starRating({
+    starSize: 16,
+    rtl: true,
+    activeColor: '#FFAE01',
+    hoverColor: '#F9D674',
+    ratedColor: '##FFAE01',
+    emptyColor: '#F3F3F3',
+    starShape: 'rounded',
+    useGradient: false,
+    disableAfterRate: false,
+
+    callback: function (currentRating, $el) { }
+  });
 });
 
