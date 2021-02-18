@@ -2,7 +2,14 @@
     font-family:"JFFlatRegular";
     src:url("../fonts/JFFlatRegular.ttf");
 }
-
+:root{
+    --maincolor:#1752F0;
+    --font-color:#676769;
+    --background-color:#2749A2;
+    --font-family:"JFFlatRegular";
+    --btn-color:#FFBD61;
+    --mainFont-color:#041344;
+}
 img{
     width:100%;
 }
@@ -32,7 +39,7 @@ body{
     position: relative;
     direction: rtl;
     text-align: right;
-    font-family:"JFFlatRegular";
+    font-family:var(--font-family);
     color:black;
 overflow-x: hidden;
 }
@@ -94,7 +101,7 @@ transition :all .5s;
 width:170px;
 height:50;
 border-radius: 12px;
-color:#1752F0;
+color:var(--maincolor);
 background-color: white;;
 font-size:1.3333333333333333em;;
 font-family:"DUBAI-MEDIUM";
@@ -104,15 +111,15 @@ transition: all .5s;
 
 }
 .scrollNav .requestBtn {
-    background-color: #1752F0;
+    background-color: var(--maincolor);
     color:white;
 transition: all .5s;
 }
 .scrollNav .requestBtn:hover{
-    color:#1752F0;
+    color:var(--maincolor);
 background-color: white;;
 font-family:"DUBAI-MEDIUM";
-border:1px solid #1752F0;
+border:1px solid var(--maincolor);
 
 }
 .requestBtn:hover{
@@ -170,7 +177,7 @@ font-size:2em;
 .sectionTitle p{
    font-size:1.3333333333333333em;
     opacity: .5;
-    color:#676769;
+    color:var(--font-color);
 }
 .servicesBox{
     border-radius: 4px;
@@ -194,7 +201,7 @@ font-size:2em;
 }
 .servicesBox p{
     font-size:1em;
-  color:#676769;
+  color:var(--font-color);
 }
 .aboutUs .container{
 background-color: #F4F5FA;
@@ -216,7 +223,7 @@ border-radius:  275px 275px 0 275px;
 }
 .aboutText p{
     font-size:1.2222222222em;
-    color:#676769;
+    color:var(--font-color);
 margin-top:62px;
 }
 .marginAbout{
@@ -238,7 +245,7 @@ margin-bottom:25px;
 }
 .clientBox p{
     font-size:1em;
-    color:#676769;
+    color:var(--font-color);
     margin-bottom:50px;
 }
 .clientImg{
@@ -255,7 +262,7 @@ margin-bottom:25px;
 }
 .clientName h4{
     font-size:1em;
-    color:#041344;
+    color:var(--mainFont-color);
     margin-bottom: 7px;;
 }
 .clientName span{
@@ -277,7 +284,7 @@ margin-bottom:25px;
     top: 25%;
  }
 .subscribe .container{
-background-color: #2749A2;
+background-color: var(--background-color);
 padding:130px 70px;
 border-radius: 150px 150px 150px 0;
 }
@@ -328,9 +335,9 @@ i.fa-phone-volume{
     height:90px;
 }
 .subscribeBtn {
-    background-color: #FFBD61;
+    background-color: var(--btn-color);
     color:white;
-    border:2px solid #FFBD61;
+    border:2px solid var(--btn-color);
     position: absolute;
     border-radius: 10px;
 height: 70px;
@@ -346,7 +353,7 @@ footer{
 }
 .subscribeBtn:hover{
     background-color: transparent;
-    color:#FFBD61;
+    color:var(--btn-color);
     transition:  all .5s;
 }
 
