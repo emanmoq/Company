@@ -162,7 +162,7 @@ margin-top:22px;
 }
 .services{
     padding-top:164px;
-    padding-bottom:250px;
+    padding-bottom:150px;
 }
 .sectionTitle{
     margin-bottom:130px;
@@ -348,8 +348,8 @@ transition: all .5s;
 }
 footer{
     background-color: #272B4B;
-    padding-top:300px;
-    padding-bottom:90px;
+    padding-top:250px;
+    padding-bottom:20px;
 }
 .subscribeBtn:hover{
     background-color: transparent;
